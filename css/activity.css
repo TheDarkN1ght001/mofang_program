@@ -1,0 +1,335 @@
+body {
+    position   : relative;
+    font-family: Helvetica, Tahoma, Arial, "Microsoft YaHei", "微软雅黑", STXihei, "华文细黑", Heiti, "黑体", SimSun, "宋体", sans-serif;
+}
+
+.my-head {
+    width           : 100%;
+    height          : 30px;
+    background-color: #dadada;
+}
+
+.mod {
+    width   : 996px;
+    margin  : 0 auto;
+    position: relative;
+    top     : 0;
+    left    : 0;
+}
+
+.left {
+    position    : absolute;
+    top         : 0px;
+    left        : 0px;
+    height      : 30px;
+    padding-left: 5px;
+}
+
+.left span {
+    color     : #666;
+    margin-top: 5px;
+    float     : left;
+}
+
+.left b {
+    /* display    : inline-block; */
+    float         : left;
+    width         : 20px;
+    height        : 20px;
+    background    : url(../img/HDrace_list_icon.png)no-repeat 0px 0px;
+    margin-top    : 5px;
+    margin-right  : 3px;
+    vertical-align: middle;
+}
+
+.right {
+    float: right;
+}
+
+.right span {
+    color     : #666;
+    margin-top: 5px;
+    float     : right;
+}
+
+.right b {
+    float         : right;
+    width         : 20px;
+    height        : 20px;
+    background    : url(../img/HDrace_list_icon.png)no-repeat 0px -25px;
+    margin-top    : 4px;
+    margin-right  : 5px;
+    vertical-align: middle;
+}
+
+.my-nav {
+    width           : 100%;
+    height          : 48px;
+    background-color: #3a9d9a;
+}
+
+.my-logo {
+    width   : 996px;
+    height  : 100%;
+    margin  : 0 auto;
+    position: relative;
+}
+
+.logo {
+    position: absolute;
+    top     : 6px;
+    left    : -15px；
+}
+
+/* 中部楼层搭建开始 */
+.my-show {
+    width      : 996px;
+    margin     : 0 auto;
+    padding-top: 30px;
+}
+
+.my-show li {
+    width        : 996px;
+    height       : 241px;
+    box-sizing   : border-box;
+    border       : 1px solid #eee;
+    border-bottom: 0px;
+    padding      : 20px;
+}
+
+.my-show li:nth-child(20),
+.non:last-child {
+    border-bottom: 1px solid #eee;
+}
+
+.my-show li .img {
+    display: inline-block;
+    width  : 430px;
+    height : 200px;
+}
+
+.my-show li img {
+    width   : 430px;
+    height  : 200px;
+    position: relative;
+}
+
+.my-show .character {
+    display       : inline-block;
+    vertical-align: top;
+    margin-left   : 27px;
+    margin-top    : 12px;
+    font-size     : 16px;
+}
+
+.my-show .character b {
+    display       : inline-block;
+    width         : 20px;
+    height        : 20px;
+    line-height   : 22px;
+    vertical-align: top;
+    margin-right  : 4px;
+}
+
+.my-show .character h4 {
+    margin-bottom: 26px;
+    font-weight  : bold;
+    font-size    : 18px;
+}
+
+.my-show .character p {
+    height   : 22px;
+    font-size: 16px;
+    color    : #666666;
+    margin   : 10px 0;
+}
+
+.my-show .character p>span {
+    display       : inline-block;
+    margin-left   : 2px;
+    vertical-align: middle;
+}
+
+.my-show .character .one {
+    background: url(../img/HDrace_list_icon.png) no-repeat 0px -52px;
+}
+
+.my-show .character .tow {
+    background: url(../img/HDrace_list_icon.png) no-repeat 0px -78px;
+}
+
+.my-show .character .three {
+    background: url(../img/HDrace_list_icon.png) no-repeat 0px -102px;
+}
+
+.my-show .character div {
+    display         : inline-block;
+    width           : 104px;
+    height          : 34px;
+    background-color: #2bbfbd;
+    text-align      : center;
+    line-height     : 34px;
+    border-radius   : 5px;
+    color           : white;
+    font-size       : 16px;
+}
+
+.my-show .character .skyblue {
+    color: #3a9da7;
+}
+
+.my-show #a-bottom {
+    display         : inline-block;
+    width           : 100%;
+    height          : 40px;
+    border          : 1px solid #eee;
+    background-color: #fafafa;
+    line-height     : 40px;
+    text-align      : center;
+    margin-top      : 20px;
+    color           : #666;
+    font-size       : 14px;
+    cursor          : pointer
+}
+
+.my-show .non {
+    display: none;
+}
+
+/* 中部楼层搭建结束 */
+/* 右侧联系栏开始 */
+#top {
+    display   : none;
+    width     : 52px;
+    height    : 54px;
+    background: url(../img/HDgotop.gif)no-repeat -52px 1px;
+    position  : fixed;
+    bottom    : 102px;
+    right     : 94px;
+    cursor    : pointer;
+}
+
+#top a {
+    display: inline-block;
+    width  : 100%;
+    height : 100%;
+}
+
+#top:hover {
+    background: url(../img/HDgotop.gif)no-repeat 0px 1px;
+}
+
+.contact {
+    width     : 52px;
+    height    : 54px;
+    background: url(../img/HDgotop.gif)no-repeat -52px -52px;
+    position  : fixed;
+    bottom    : 42px;
+    right     : 94px;
+    cursor    : pointer;
+}
+
+.contact:hover {
+    background: url(../img/HDgotop.gif)no-repeat 0px -52px;
+}
+
+/* 右侧联系栏结束 */
+/* 底部展示栏开始 */
+.bottom {
+    width           : 100%;
+    height          : 231px;
+    background-color: #2b2b2b;
+    margin-top      : 60px;
+}
+
+.bottom .my-bottomNav {
+    width : 996px;
+    height: 231px;
+    margin: 0 auto;
+}
+
+.bottom .my-bottomNav ul:first-child {
+    margin-left: 45px;
+}
+
+.bottom .my-bottomNav ul {
+    float       : left;
+    width       : 145px;
+    height      : 140px;
+    box-sizing  : border-box;
+    border-left : 1px solid #404040;
+    margin-top  : 50px;
+    padding-left: 15px;
+}
+
+.bottom .my-bottomNav #img a:hover,
+#imgT a:hover {
+    text-decoration: none
+}
+
+.bottom .my-bottomNav #img span {
+    display         : none;
+    width           : 80px;
+    height          : 80px;
+    background-color: #fff;
+    margin-left     : 26px;
+    box-sizing      : border-box;
+    padding         : 3px;
+}
+
+.bottom .my-bottomNav #imgT {
+    position: relative;
+}
+
+.bottom .my-bottomNav #imgT span {
+    display         : none;
+    width           : 80px;
+    height          : 80px;
+    background-color: #fff;
+    margin-left     : 25px;
+    position        : absolute;
+    padding         : 3px;
+}
+
+.bottom .my-bottomNav #img span img {
+    width : 74px;
+    height: 74px;
+}
+
+.bottom .my-bottomNav ul li:first-child strong {
+    color    : #9c9c9c;
+    font-size: 14px;
+}
+
+.bottom .my-bottomNav ul li a {
+    display  : block;
+    color    : #818181;
+    font-size: 14px;
+    height   : 24px;
+}
+
+.bottom .my-bottomNav ul li a:hover {
+    text-decoration: underline;
+}
+
+.bottom .my-bottomNav ul li:first-child {
+    margin-bottom: 13px;
+    margin-top   : 2px;
+}
+
+.bottom .my-bottomNav ul:last-child {
+    border-left : 0;
+    padding-left: 0px;
+}
+
+.bottom .my-bottomNav ul:last-child>li {
+    margin-top: 0px;
+}
+
+.bottom .my-bottomNav ul .md {
+    vertical-align: middle;
+    margin-top    : -2px;
+    margin-right  : 1px;
+}
+
+/* 底部展示栏结束 */

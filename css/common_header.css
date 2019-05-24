@@ -1,0 +1,256 @@
+/* 清除浮动带来的影响的代码 */
+.clearfix::after {
+    content   : ".";
+    height    : 0;
+    display   : block;
+    clear     : both;
+    visibility: hidden;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+a {
+    cursor: pointer;
+}
+
+.inner {
+    width : 996px;
+    margin: 0 auto;
+}
+
+/*header开始*/
+header {
+    font-family: 'microsoft yahei';
+    font-size  : 12px;
+}
+
+header .top {
+    width           : 100%;
+    height          : 23px;
+    line-height     : 23px;
+    border-bottom   : 1px solid #c7c7c7;
+    background-color: #dadada;
+}
+
+header .top .top_left {
+    float: left;
+}
+
+header .top li {
+    float       : left;
+    margin-right: 25px;
+}
+
+header .top li a {
+    color: #369;
+}
+
+header .top li a:hover {
+    text-decoration: underline;
+}
+
+header .top .top_left li .icon {
+    background  : url("../img/header_phone_icon.png") no-repeat 0 0;
+    margin-right: 80px;
+    margin-left : 0;
+    padding     : 1px 0 2px 15px;
+}
+
+header .top .top_right {
+    float       : right;
+    margin-right: 25px;
+}
+
+header .logo {
+    background-color: #3a9d9a;
+    height          : 51px;
+    width           : 100%;
+    line-height     : 50px;
+    border-bottom   : 1px solid #3a9d9a;
+}
+
+header .logo .logo_left {
+    float: left;
+}
+
+header .logo .logo_left li {
+    float       : left;
+    border-right: 1px solid #49a6a5;
+    border-left : 1px solid #3a9d9a;
+}
+
+header .logo .logo_left .nav_list {
+    position: relative;
+}
+
+header .logo_left .nav_first:hover {
+    background-color: #28898d;
+}
+
+header .logo .logo_left .nav_list.currentLi {
+    background-color: #28898d;
+}
+
+header .logo .logo_left .nav_list .cover {
+    display    : none;
+    position   : absolute;
+    z-index    : 10000;
+    left       : 0px;
+    top        : 49px;
+    width      : 100%;
+    background : #fbfbfb;
+    height     : 5px;
+    line-height: 5px;
+    font-size  : 0px;
+}
+
+header .logo .logo_left .nav_list:hover .cover {
+    display: block;
+}
+
+header .logo .logo_left .nav_list:hover a {
+    background-color: #FBFBFB;
+    color           : #0e6596;
+}
+
+header .logo .logo_left .nav_list:hover a span {
+    background: url(../img/header_icon_up.gif) right center no-repeat;
+}
+
+header .logo .logo_left .nav_list span {
+    background: url("../img/header_arrow_down.png") right center no-repeat;
+    width     : 10px;
+    height    : 10px;
+}
+
+header .logo .logo_left .nav_list .nav_list_a {
+    display        : inline-block;
+    width          : 100px;
+    height         : 50px;
+    line-height    : 50px;
+    text-align     : center;
+    color          : #c4f7ff;
+    font-size      : 16px;
+    text-decoration: none;
+}
+
+header .logo .logo_left .nav_list a span {
+    font-family  : 'microsoft yahei';
+    padding-right: 12px;
+    background   : url(../img/header_arrow_down.png) right center no-repeat;
+}
+
+.logo_left .nav_list .subnav {
+    position        : absolute;
+    left            : -1px;
+    top             : 51px;
+    width           : 285px;
+    border          : 1px solid #c0c0c0;
+    border-top      : 0;
+    background-color: #FBFBFB;
+    padding         : 6px 15px 15px;
+    box-shadow      : 2px 2px 3px rgba(0, 0, 0, 0.25);
+    display         : none;
+    z-index         : 1005;
+}
+
+.logo_left .nav_list .subnav dl {
+    padding      : 0 0 0 10px;
+    line-height  : 24px;
+    border-bottom: 1px solid #cccccc;
+}
+
+
+.logo_left .nav_list .subnav dl dt {
+    padding    : 10px 0 2px 5px;
+    color      : #0e6596;
+    font-size  : 16px;
+    line-height: 25px;
+    cursor     : pointer;
+}
+
+.logo_left .nav_list .subnav dl dt a {
+    margin-right   : 20px;
+    color          : #0e6596 !important;
+    text-decoration: none;
+}
+
+.logo_left .nav_list .subnav dl dt a .new_icon {
+    position        : absolute;
+    z-index         : 9;
+    left            : 15%;
+    margin-left     : 37px;
+    top             : 5px;
+    height          : 14px;
+    line-height     : 12px;
+    font-style      : normal;
+    padding         : 0 5px;
+    background-color: #FF4400;
+    color           : #fff;
+    font-size       : 12px;
+    border-radius   : 3px;
+}
+
+.logo_left .nav_list .subnav dl dt a .area_icon {
+    position         : absolute;
+    width            : 0;
+    height           : 0;
+    border-style     : dashed;
+    border-color     : transparent;
+    overflow         : hidden;
+    z-index          : 8;
+    top              : 11px;
+    left             : 18%;
+    margin-left      : 37px;
+    border-width     : 8px;
+    border-left-style: solid;
+    border-left-color: #FF4400;
+}
+
+
+.logo_left .nav_list .subnav dl dd {
+    color: #cccccc;
+}
+
+.logo_left .nav_list .subnav dl dd a {
+    display    : inline-block;
+    margin     : 0 5px;
+    font-size  : 12px;
+    color      : #949494 !important;
+    white-space: nowrap;
+}
+
+.logo_left .nav_list .subnav dl dd a:hover {
+    text-decoration: underline;
+    color          : #0e6596 !important;
+}
+
+
+header form {
+    float: right;
+}
+
+header form input {
+    width        : 261px;
+    height       : 24px;
+    line-height  : 24px;
+    border-radius: 2px;
+    outline      : none;
+    padding      : 1px 1px 1px 9px;
+    border       : 1px solid #CDCDCD;
+    box-shadow   : 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+}
+
+header form .search_icon {
+    position: relative;
+    left    : -28px;
+}
+
+header form .search_icon img {
+    position: relative;
+    top     : 0;
+}
+
+/*header结束*/

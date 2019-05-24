@@ -1,0 +1,311 @@
+.w {
+  width: 1000px;
+}
+
+.banner {
+  background: url(../img/1cd38397553cb9cfa1408d1ae3b30ba7.jpg) no-repeat center;
+  height    : 440px;
+}
+
+.banner .maincontent .search {
+  width               : 650px;
+  height              : 93px;
+  -webkit-transform   : translateY(175px);
+  transform           : translateY(175px);
+  margin              : 0 auto;
+  background          : url(../img/search_input_shadow.png) no-repeat scroll 0 0;
+  *background-position: 26px 25px;
+  position            : relative;
+}
+
+.banner .maincontent .search .search_main {
+  position: absolute;
+  left    : 0;
+  top     : 0;
+  width   : 620px;
+  height  : 52px;
+}
+
+.banner .maincontent .search .search_main input {
+  height      : 51px;
+  width       : 535px;
+  color       : #666;
+  font        : 12px/100% "微软雅黑";
+  padding-left: 10px;
+  font-size   : 20px;
+  line-height : 51px;
+}
+
+.banner .maincontent .search .search_main a {
+  display   : block;
+  width     : 75px;
+  height    : 51px;
+  background: #fa7b00 url(../img/xlzn_search.png) 2px -12px no-repeat;
+  float     : right;
+}
+
+.banner .maincontent .search .search_main #keywords {
+  position        : absolute;
+  top             : 52px;
+  left            : 0;
+  background-color: #f0f4f0;
+  list-style      : none;
+  width           : 535px;
+}
+
+.banner .maincontent .search .search_recommend {
+  width   : 820px;
+  height  : 26px;
+  position: absolute;
+  left    : 0;
+  top     : 67px;
+}
+
+.banner .maincontent .search .search_recommend ul {
+  width     : 620px;
+  background: url(../img/scene_alpha_30.png) repeat;
+}
+
+.banner .maincontent .search .search_recommend ul li {
+  float      : left;
+  padding    : 4px 11px;
+  margin-left: 3px;
+}
+
+.banner .maincontent .search .search_recommend ul li a {
+  color  : #fff;
+  opacity: 1;
+  font   : 12px Arial, "simsun", "microsoft yahei";
+}
+
+.banner .maincontent .route_dest_icon {
+  width            : 30px;
+  height           : 32px;
+  background       : url(../img/xlzn_dest.png) no-repeat -6px -191px;
+  -webkit-transform: translate(960px, 300px);
+  transform        : translate(960px, 300px);
+}
+
+.banner .maincontent .route_dest_icon .route_ditxt {
+  width           : 120px;
+  height          : 36px;
+  padding         : 20px;
+  margin-bottom   : 10px;
+  background-color: rgba(0, 0, 0, 0.3);
+  position        : absolute;
+  left            : -90px;
+  top             : -78px;
+}
+
+.banner .maincontent .route_dest_icon .route_ditxt p a {
+  color: #fff;
+  font : 12px/150% Arial, "simsun", "microsoft yahei";
+}
+
+.banner .maincontent .route_dest_icon .route_ditxt span {
+  color: #fff;
+}
+
+.banner .maincontent .route_dest_icon .route_ditxt span a {
+  color          : #fff;
+  font           : 12px/150% Arial, "simsun", "microsoft yahei";
+  text-decoration: underline;
+}
+
+.route {
+  height          : 100px;
+  background-color: #f9f9f9;
+}
+
+.route .maincontent {
+  margin: 0 auto;
+}
+
+.route .maincontent .route_what,
+.route .maincontent .route_how {
+  float        : left;
+  width        : 310px;
+  height       : 60px;
+  padding-left : 75px;
+  padding-top  : 20px;
+  padding-right: 15px;
+  background   : url(../img/xlzn_dest.png) no-repeat -6px -39px;
+}
+
+.route .maincontent .route_what h4,
+.route .maincontent .route_how h4 {
+  color      : #666;
+  height     : 27px;
+  display    : block;
+  font-size  : 20px;
+  font-family: "microsoft yahei";
+  font-weight: normal;
+}
+
+.route .maincontent .route_what p,
+.route .maincontent .route_how p {
+  color: #666;
+  font : 12px/150% Arial, "simsun", "microsoft yahei";
+}
+
+.route .maincontent .route_how {
+  background: url(../img/xlzn_dest.png) no-repeat -6px -110px;
+}
+
+.route .maincontent .route_what:hover {
+  background: url(../img/xlzn_dest.png) no-repeat -594px -39px;
+}
+
+.route .maincontent .route_how:hover {
+  background: url(../img/xlzn_dest.png) no-repeat -594px -110px;
+}
+
+.route .maincontent .route_create {
+  display     : block;
+  float       : right;
+  width       : 196px;
+  height      : 50px;
+  background  : #fa7b00;
+  line-height : 50px;
+  text-align  : center;
+  font-size   : 24px;
+  color       : #fff;
+  margin-top  : 20px;
+  margin-right: 4px;
+}
+
+.scenery {
+  margin-bottom: 50px;
+  height       : 690px;
+}
+
+.scenery .hot_place {
+  height     : 100px;
+  padding-top: 40px;
+  background : #f0f3ef;
+}
+
+.scenery .hot_place h5 {
+  display    : block;
+  height     : 20px;
+  font-size  : 20px;
+  font-weight: normal;
+  font-family: "microsoft yahei";
+  border-left: #3a9d9a 5px solid;
+  text-indent: 10px;
+  float      : left;
+}
+
+.scenery .hot_place .horizontal {
+  float: right;
+}
+
+.scenery .hot_place .horizontal li {
+  float       : left;
+  width       : 76px;
+  height      : 30px;
+  margin-right: 20px;
+  position    : relative;
+}
+
+.scenery .hot_place .horizontal li span {
+  display   : block;
+  margin-top: 3px;
+  padding   : 6px 10px;
+  font-size : 14px;
+  cursor    : pointer;
+  color     : #666;
+}
+
+.scenery .hot_place .horizontal li span:hover {
+  text-decoration: underline;
+  color          : #3a9d9a;
+}
+
+.scenery .hot_place .horizontal li i {
+  display     : none;
+  width       : 0;
+  height      : 0;
+  border-width: 6px;
+  border-style: solid;
+  border-color: #3a9d9a #f0f4f0 #f0f4f0 #f0f4f0;
+  position    : absolute;
+  left        : 32px;
+  bottom      : -12px;
+}
+
+.scenery .hot_place .horizontal li.selectActive {
+  background-color  : #3a9d9a;
+  border-radius     : 3px;
+  -webkit-transition: color 1s;
+  transition        : color 1s;
+}
+
+.scenery .hot_place .horizontal li.selectActive span {
+  color: #fff;
+}
+
+.scenery .hot_place .horizontal li.selectActive i {
+  display: block;
+}
+
+.scenery .hot_place .hot_place_show {
+  margin-top: 50px;
+  min-height: 590px;
+}
+
+.scenery .hot_place .hot_place_show .item {
+  width      : 195px;
+  height     : 195px;
+  float      : left;
+  margin     : 0 5px 5px 0;
+  font-family: 'microsoft yahei';
+  overflow   : hidden;
+}
+
+.scenery .hot_place .hot_place_show .item a {
+  display : inline-block;
+  width   : 100%;
+  height  : 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.scenery .hot_place .hot_place_show .item a img {
+  width : 100%;
+  height: 100%;
+}
+
+.scenery .hot_place .hot_place_show .item a img:hover {
+  -webkit-transform : scale(1.2);
+  transform         : scale(1.2);
+  -webkit-transition: all 1.5s;
+  transition        : all 1.5s;
+}
+
+.scenery .hot_place .hot_place_show .item a .default {
+  color      : #fff;
+  font-size  : 16px;
+  background : url(../img/tile.png) 0 0 repeat-x;
+  position   : absolute;
+  left       : 0px;
+  bottom     : 0px;
+  width      : 100%;
+  padding-top: 40px;
+}
+
+.scenery .hot_place .hot_place_show .item a .default h4 {
+  line-height: 40px;
+  text-indent: 10px;
+  font-weight: bold;
+}
+
+.scenery .hot_place .hot_place_show .lg {
+  width : 395px;
+  height: 395px;
+}
+
+.scenery .hot_place .hot_place_show .md {
+  width : 395px;
+  height: 195px;
+}

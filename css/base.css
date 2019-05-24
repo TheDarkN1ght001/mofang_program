@@ -1,0 +1,272 @@
+@charset "utf-8";
+
+/*学习中通常的base.css*/
+/* 这是初始化样式文件 */
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+ul,
+li,
+ol,
+dl,
+dd,
+dt,
+input,
+img,
+div,
+span,
+a {
+    font-weight: normal;
+    margin     : 0;
+    padding    : 0;
+}
+
+ul,
+ol,
+dl {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color          : #646464;
+}
+
+/* a:hover {
+    color:#bf1a29;
+} */
+body {
+    font: 12px/100% "微软雅黑";
+    /* 字体连写的时候,font-size后面才可以加行高 */
+}
+
+input {
+    border : none;
+    outline: none;
+}
+
+img {
+    vertical-align: middle;
+}
+
+i {
+    font-style: normal;
+}
+
+/* 页面上那里文字是红色,就在那里加上这样的一个类. */
+.fontColorRed {
+    color: red;
+}
+
+.fontColorgreen {
+    color: #3ecf9e;
+}
+
+/* 版心类 */
+.w {
+    /* 版心有宽度 */
+    width: 1140px;
+    /* 版心要居中 */
+    margin: 0 auto;
+}
+
+/* 清除浮动 */
+.clearfix::after {
+    content   : ".";
+    display   : block;
+    height    : 0;
+    visibility: hidden;
+    clear     : both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* 字体图标 */
+@font-face {
+    font-family: 'iconfont';
+    src        : url('../iconfont/iconfont.eot');
+    src        : url('../iconfont/iconfont.eot?#iefix') format('embedded-opentype'),
+        url('../iconfont/iconfont.woff2') format('woff2'),
+        url('../iconfont/iconfont.woff') format('woff'),
+        url('../iconfont/iconfont.ttf') format('truetype'),
+        url('../iconfont/iconfont.svg#iconfont') format('svg');
+}
+
+.iconfont {
+    font-family            : "iconfont" !important;
+    font-size              : 16px;
+    font-style             : normal;
+    -webkit-font-smoothing : antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/*
+*
+*全站非首页的基本样式规则
+*
+*/
+/*基本样式 base style*/
+html {
+    display: block;
+}
+
+html,
+body,
+div,
+span,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+address,
+big,
+cite,
+code,
+del,
+em,
+font,
+img,
+ins,
+small,
+strong,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend {
+    margin : 0;
+    padding: 0;
+}
+
+body {
+    font: 12px/150% "微软雅黑", "simsun", "microsoft yahei";
+}
+
+table {
+    border-collapse : collapse;
+    border-spacing  : 0;
+    max-width       : 100%;
+    background-color: transparent;
+}
+
+code,
+pre {
+    font-family: Consolas, "Courier New", monospace;
+}
+
+/* body { color: #666; background: #fff; font: 12px/150% Arial,"simsun","microsoft yahei"; text-align: center; position: relative;} */
+ol,
+ul,
+li {
+    list-style: none;
+}
+
+fieldset,
+img {
+    vertical-align: middle;
+    border        : 0;
+}
+
+em,
+cite {}
+
+sub {
+    vertical-align: sub;
+}
+
+sup {
+    vertical-align: super;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+/* remember to define focus styles! */
+:focus {
+    outline: 0;
+}
+
+/* remember to highlight inserts somehow! */
+ins {
+    text-decoration: none;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+/* a { color: #369; text-decoration: none; } */
+a           :hover,
+a:active {
+    color          : #0e6596;
+    text-decoration: underline;
+}
+
+a.high {
+    color: #0e6596;
+}
+
+img,
+fieldset {
+    border: 0 none;
+}
+
+form {
+    margin: 0;
+}
+
+h3 {
+    font-size  : 14px;
+    font-weight: bold;
+}
+
+h5 {
+    font-size  : 12px;
+    font-weight: bold;
+    margin     : 10px 0;
+}
+
+label,
+input,
+button,
+select,
+textarea {
+    font-size  : 14px;
+    font-weight: normal;
+    line-height: 20px;
+}

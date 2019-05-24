@@ -1,0 +1,242 @@
+html,
+body,
+input,
+ul,li,ol,dl,dd,dt,p,h1,h2,h3,h4,h5,h6,form,fieldset,legend,img {
+    font-family: "microsoft yahei","simsun",Arial;
+    margin:0;padding:0
+}
+img {
+    vertical-align: top;
+}
+a {
+    text-decoration: none;
+    color:black;
+}
+fieldset,img { 
+    border:0
+}
+ul,ol{
+    list-style:none
+}
+input,button {
+    border: 0;
+    /* 清除获取焦点高亮边框 */
+    outline: none;
+}
+body {
+    color:#333;
+    font:12px/20px "SimSun","宋体","Arial Narrow",HELVETICA;
+    background:#fff;
+}
+.clearfix::after {
+    content:".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+.clearfix {
+    zoom: 1;
+}
+/*版心*/
+.w {
+    width: 1006px;
+    margin: 0 auto;
+}
+/* 初始化样式代码结束 */
+
+/* 中部（搜索部分）开始 */
+.banner {
+    height: 457px;
+    text-align: center;
+    background: url(../img/hotel_banner.png) center no-repeat;
+}
+.banner .text {
+    
+    font-size: 36px;
+    line-height: 36px;
+    color: #fffefe;
+    padding-top: 150px;
+    padding-bottom: 36px;
+    white-space: nowrap;
+    font-weight: 700;
+}
+.banner .search {/*这里找日历插件*/
+    /* margin: 0 625px; */
+    margin: 0 auto;
+    width: 600px;
+    height: 77px;
+}
+.banner .search .search_top {
+    width: 605px;
+    height: 41px;
+    position: relative;
+}
+.banner .search .search_input {
+    width: 110px;
+    height: 41px;
+    border: none;
+    padding: 0 0 0 36px;
+    opacity: 0.9;
+    color: #333;
+}
+.banner .search .search_text {
+    width: 211px;
+    padding: 0 0 0 31px;
+    background: url(../img/hotel_icon.png) 5px -156px no-repeat;
+    background-color: #fff;
+    margin: 0 3px 0 0;
+}
+.banner .search .check_in {
+    background: url(../img/hotel_icon.png) 3px -187px no-repeat;
+    background-color: #fff;
+}
+.banner .search .check_out {
+    background: url(../img/hotel_icon.png) 3px -230px no-repeat;
+    background-color: #fff;
+}
+.banner .search button {
+    background: url(../img/hotel_icon.png) no-repeat;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    border: 0;
+    cursor: pointer;
+    margin-left: 10px;
+    position: absolute;
+}
+.banner .search .name_search {
+    font-family: Arial,"simsun";
+    font-size: 12px;
+    color: #fff;
+    margin: 20px 17px 0;
+    line-height: 16px;
+    overflow: hidden;
+}
+.banner .search .name_search li {
+    float: left;
+    margin-right: 10px;
+    cursor: pointer;
+}
+/* 中部（搜索部分）结束 */
+/* 热门住宿地开始 */
+.hots {
+    background: url(../img/dest_list_bk.png) center no-repeat;
+    height: 200px;
+}
+.hots ul {
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 60px 18px 0;
+    width: 970px;
+}
+.hots li{
+    color: #999;
+    float: left;
+    margin: 0 11px;
+    text-align: center;
+    height: 120px;
+    cursor: pointer;
+}
+.hots li p {
+    font-size: 14px;
+    margin: 14px 0;
+    line-height: 22px;
+}
+/* .hots img {
+    transition: all 0.6s;
+    opacity: 1;
+} */
+/* 热门住宿地结束 */
+/* 讨论区开始 */
+/* .help {
+    height: 306px;
+    background-color: #f8f8f8;
+} */
+.help .links {
+    width: 996px;
+    min-height: 306px;
+    margin: 0 auto;
+}
+.help .links .hotelhelp {
+    width: 268px;
+    float: left;
+    text-align: left;
+    margin: 38px 24px;
+}
+.help .links .hotelhelp h2 {
+    color: #3a9d9a;
+    font-size: 18px;
+    padding: 18px 0 18px 1px;
+    line-height: 18px;
+    width: 100%;
+    white-space: nowrap;
+    margin-bottom: 15px;
+    margin-right: 24px;
+    border-bottom: 1px solid #3a9d9a;
+}
+.help .links li {
+    font-size: 14px;
+    height: 26px;
+}
+.help .links li a:hover {
+    color: #f38814;
+    text-decoration: underline;
+}
+.help .links .mid {
+    margin: 38px 48px;
+}
+.help .links .yuding {
+    display: block;
+    height: 30px;
+    width: 120px;
+    float: left;
+    overflow: hidden;
+    background: url(../img/hotel_icon.png) no-repeat;
+    margin: 7px 10px 7px 0;
+}
+.help .links .bx{
+    background-position: 0 -124px;
+}
+.help .links .dj{
+    background-position: 0 -94px;
+}
+.help .links .qz{
+    background-position: 0 -64px;
+}
+/* 讨论区结束 */
+/* 底部补充 */
+
+
+/* 两个按钮 */
+#go_top,#call_me{
+    position: fixed;
+    right: 371px;
+    top: 90%;
+    display: block;
+    width: 52px;
+    height: 52px;
+    /* background-color: #000; */
+    background: #37a19e url(../img/gotop.gif) no-repeat -52px 0; 
+}
+#go_top{
+    margin-top: -60px;
+}
+#call_me{
+    display: block;
+    position: fixed;
+    right: 371px;
+    top: 90%;
+    background-position: -52px -53px;
+}
+
+#go_top:hover{
+    background: url(../img/gotop.gif) no-repeat ;
+}
+#call_me:hover{
+    background: url(../img/gotop.gif) no-repeat 0 -53px;
+}
+
+
+
+

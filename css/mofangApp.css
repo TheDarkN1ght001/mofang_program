@@ -1,0 +1,534 @@
+header .logo {
+    position: fixed;
+    top: 24px;
+    z-index: 9999;
+    margin: 0 auto;
+}
+
+header .top{
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+    margin: 0 auto;
+}
+
+.container {
+    margin-top: 75px;
+}
+.screen01 {
+    background: url("../img/p1bg.jpg") center bottom;
+}
+
+.content {
+    width: 996px;
+    height: 700px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.share_left_top {
+    position: relative;
+}
+.share_left_top img {
+    display: block;
+    position: absolute;
+    top: 135px;
+    left: 50px;
+    animation: share01 1s ease;
+}
+
+
+@keyframes share01 {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.share_left_bottom {
+    position: absolute;
+    top: 410px;
+    left: 0;
+}
+
+.share_left_bottom .share_left_bottom_img {
+    float: left;
+    position: absolute;
+}
+
+.share_left_bottom .share_left_bottom_img img {
+    display: block;
+    margin-left: 50px;
+    margin-bottom: 10px;
+    opacity: 0;
+    animation: imgTop01 0.5s ease 1s forwards;
+}
+
+@keyframes imgTop01 {
+   from{
+       opacity: 0;
+   }
+    to {
+        opacity: 1;
+    }
+}
+
+.share_left_bottom .share_left_bottom_img .qrcode img {
+    display: block;
+    width: 102px;
+    height: 102px;
+    position: absolute;
+    top: 0;
+    left: 200px;
+}
+
+.share_right {
+    float: left;
+}
+
+.share_right img:first-child {
+    position: absolute;
+    left: 412px;
+    top: 202px;
+    opacity: 0;
+    z-index: 1001;
+    animation: rightTop01 1s ease 2.5s forwards;
+}
+
+.share_right img:nth-child(2) {
+    position: absolute;
+    top: 120px;
+    left: 730px;
+    opacity: 0;
+    z-index: 1001;
+    animation: rightTop01 1s ease 3.5s forwards;
+}
+
+@keyframes rightTop01 {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.share_right img:last-child {
+    position: absolute;
+    top: 250px;
+    left: 430px;
+    opacity: 0;
+    animation: imgTop01 0.5s ease 1.6s forwards;
+}
+
+/*第二屏开始*/
+.screen02 {
+    background: url("../img/p2bg.jpg") center bottom;
+}
+
+.activity_left .activity_left_top {
+    position: relative;
+    float: left;
+}
+
+.activity_left .activity_left_top img {
+    display: block;
+    position: absolute;
+    top: 135px;
+    left: 50px;
+    opacity: 0;
+}
+
+.screen02.now .activity_left .activity_left_top img {
+    animation: activity02 1s ease forwards;
+}
+
+@keyframes activity02 {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.screen02 .activity_left_bottom {
+    position: absolute;
+    top: 465px;
+    left: 0;
+}
+
+.screen02 .activity_left_bottom img {
+    position: absolute;
+    left: 50px;
+    top: -40px;
+    opacity: 0;
+}
+
+.screen02.now .activity_left_bottom img {
+    animation: img02 1s ease 1s forwards;
+}
+
+@keyframes img02 {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.screen02 .activity_left_bottom img:nth-child(2) {
+    top: 24px;
+}
+
+.screen02 .activity_left_bottom img:last-child {
+    position: absolute;
+    width: 102px;
+    height: 102px;
+    left: 250px;
+    top: -40px
+}
+
+.screen02 .activity_right {
+    float: right;
+}
+
+.screen02 .activity_right .phone {
+    position: absolute;
+    left: 510px;
+    top: 70px;
+    opacity: 0;
+}
+
+.screen02 .activity_right .dot img:first-child {
+    position: absolute;
+    right: 480px;
+    top: 360px;
+}
+
+.screen02 .activity_right .dot img:nth-child(2) {
+    position: absolute;
+    right: 230px;
+    top: 125px;
+    z-index: 1001;
+}
+
+.screen02 .activity_right .dot img:last-child {
+    position: absolute;
+    right: 100px;
+    top: 225px;
+}
+
+.screen02.now .activity_right .dot img {
+    animation: dot02 1s ease infinite alternate;
+}
+
+@keyframes dot02 {
+    0% {
+        transform: scale(0.8);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.screen02.now .activity_right .phone{
+    animation: phone02 1s ease 2s forwards;
+}
+
+@keyframes phone02 {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.screen02 .activity_right .foot {
+    position: absolute;
+    left: 700px;
+    top: 40px;
+    opacity: 0;
+    transform: translateY(-100px);
+}
+
+.screen02.now .activity_right .foot {
+    animation: foot02 1s ease 3s forwards;
+}
+
+@keyframes foot02 {
+    from {
+        transform: translateY(-100px);
+    }
+    to {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+.screen02 .activity_right .dive {
+    position: absolute;
+    top: 30%;
+    transform: translateY(-50%);
+    left: 750px;
+    opacity: 0;
+}
+
+.screen02.now .activity_right .dive {
+    animation: dive02 1s ease 2s forwards;
+}
+
+
+@keyframes dive02 {
+    from {
+        transform: translateX(500px);
+    }
+    to {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+/*第二屏结束*/
+
+/*第三屏开始*/
+
+.screen03 {
+    background: url("../img/p3bg.jpg") center bottom;
+}
+
+.screen03 .social_left_top {
+    position: relative;
+    float: left;
+}
+
+.screen03 .social_left_top img {
+    position: absolute;
+    left: 50px;
+    top: 120px;
+    opacity: 0;
+}
+
+.screen03.now .social_left_top img {
+    animation: social03 1s ease forwards;
+}
+
+@keyframes social03 {
+    from{
+        opacity: 0;
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.screen03 .social_left_bottom {
+    position: absolute;
+    left: 50px;
+    bottom: 160px;
+}
+
+.screen03 .social_left_bottom img {
+    opacity: 0;
+}
+
+.screen03.now .social_left_bottom img {
+    animation: imgShow03 1s ease 1s forwards;
+}
+
+.screen03 .phoneStyle {
+    float: left;
+}
+
+.screen03 .phoneStyle img {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.screen03 .erweima {
+    float: right;
+    margin-left: 20px;
+}
+
+.screen03 .erweima img {
+    display: block;
+    width: 102px;
+    height: 102px;
+}
+
+@keyframes imgShow03 {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.screen03 .social_right {
+    float: right;
+}
+
+.screen03 .social_right .phone {
+    position: absolute;
+    right: 50px;
+    top: 230px;
+    opacity: 0;
+}
+
+.screen03.now .social_right .phone {
+    animation: phone03 0.5s ease 2s forwards;
+}
+
+@keyframes phone03 {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+.screen03 .social_right .person img {
+    z-index: 1002;
+    opacity: 0;
+    transform: rotateY(45deg);
+}
+
+.screen03 .social_right .person .person1{
+    position: absolute;
+    left: 435px;
+    top: 330px;
+}
+
+.screen03 .social_right .person .person1 .show {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -30px;
+}
+.screen03 .social_right .person .person2 {
+    position: absolute;
+    top: 230px;
+    right: 130px;
+}
+
+.screen03 .social_right .person .person2 .show {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -30px;
+}
+
+.screen03 .social_right .person .person3 {
+    position: absolute;
+    right: 265px;
+    top: 35px;
+}
+.screen03 .social_right .person .person3 .show {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -30px;
+}
+.screen03 .social_right .person .show {
+    width: 100px;
+    height: 42px;
+    background: url('../img/c2.png') no-repeat;
+    opacity: 0;
+    z-index: 0;
+    transform-origin: center center;
+}
+
+.screen03.now .social_right .person1 .show {
+    animation: show03 0.3s ease 2.5s forwards infinite alternate;
+}
+
+.screen03.now .social_right .person .person1 img{
+    animation: person03 0.5s ease 3s forwards;
+}
+
+
+@keyframes person03 {
+    0% {
+        opacity: 0;
+        transform: rotateY(-45deg);
+    }
+    50% {
+        transform: rotateY(45deg);
+        opacity: 1;
+    }
+    100% {
+        transform: rotateY(0deg);
+        opacity: 1;
+    }
+}
+
+.screen03.now .social_right .person3 .show {
+    animation: show03 0.3s ease 3.7s forwards infinite alternate;
+}
+
+.screen03.now .social_right .person .person3 img {
+    animation: person03 0.5s ease 4.2s forwards;
+}
+
+.screen03.now .social_right .person2 .show {
+    animation: show03 0.3s ease 4.9s forwards infinite alternate;
+}
+
+.screen03.now .social_right .person .person2 img {
+    animation: person03 0.5s ease 5.2s forwards;
+}
+
+@keyframes show03 {
+    0% {
+        opacity: 0.5;
+        transform: scale(0.8) translateX(-50%);
+    }
+    50% {
+        opacity: 0.5;
+        transform: scale(1) translateX(-50%);
+    }
+    100% {
+        transform: scale(1.2) translateX(-50%);
+        opacity: 0.5;
+    }
+
+}
+
+/*第三屏结束*/
+
+/*第四屏开始*/
+.screen04 .myContainer{
+    height: 310px;
+}
+
+/*第四屏结束*/
+
+#header {
+    position: fixed;
+    top: 0;
+    z-index:1003;
+    height: 90px;
+    width: 100%;
+}
+
+

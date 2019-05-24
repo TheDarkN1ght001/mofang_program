@@ -1,0 +1,609 @@
+初始化代码开始 */
+html,
+body,
+h1,h2,h3,
+p,
+ul,li,
+ol,
+input,
+a,
+img {
+    margin: 0;
+    padding: 0;
+}
+a {
+  text-decoration: none;
+
+}
+a:hover {
+    color:#e33333;
+}
+ul,ol,li {
+    list-style: none;
+    /* overflow: hidden; */
+}
+.hander ul {
+    margin: 0px;
+} 
+input,img {
+    border:none;
+    outline: none;
+    vertical-align:middle;
+}
+body {
+    font-size: 12px;
+    height: 2000px;
+    background-color: #f0f3ef;
+    font-weight: 400;
+    font-family:Consolas, "Courier New", monospace;
+}
+
+/* 那里要设置文字颜色为红,就在那里添加这个类. */
+.fontColorRed {
+    color:red;
+}
+
+/* 清除浮动带来的影响的代码 */
+.clearfix::after {
+    content: ".";
+    height: 0;
+    display: block;
+    clear: both;
+    visibility: hidden;
+}
+.clearfix {
+    *zoom: 1;
+}
+.banxin{
+    width: 996px;
+    margin: 0 auto;
+}
+/*顶部开始*/
+.top{
+    width: 100%;
+    height: 40px;
+    background-color: #dadada;
+    border-bottom: 1px solid #b6b4b6;
+}
+.top-son{
+    line-height:40px;
+}
+.top-son a{
+    color: #336699;
+}
+.top.left{
+    float: left;
+}
+.top .left li{
+    float: left;
+    margin-right: 26px;
+}
+.top .left li:nth-child(3) a:nth-child(1) img{
+    width: 12px;
+    height: 15px;
+
+}
+.top .left li a:hover{
+    text-decoration:underline;
+}
+.top .right{
+    float: right;
+}
+.top .right li{
+    float: left;
+    margin-left: 10px;
+    margin-top: -10px;
+}
+/*顶部结束*/
+
+
+/*logo 开始*/
+.log{
+    width: 100%;
+    height: 92px;
+    background: #f0f0f0;
+}
+.maincontant{
+    line-height: 92px;
+    text-align: center;
+}
+/*logo 结束*/
+
+
+/*导航栏开始*/
+.nav{
+    width: 100%;
+    height: 50px;
+    background-color: #3a9d9a;
+    line-height: 50px;
+    position: relative;
+}
+.hander ul li{
+    float: left;
+    font-size: 17px;
+    width: 140px;
+    height: 48px;
+    text-align: center;
+    font-weight: 700;
+    border-left: 1px solid #3a9d9a;
+    border-right: 1px solid #49a6a5;
+    position: relative;
+    border-top: 1px solid #3a9d9a;
+    border-bottom:1px solid #3a9d9a;
+}
+.hander ul li a{
+    color: white;
+}
+.hander ul li:nth-child(1){
+    background-color: #28898d;
+    width: 140px;
+}
+.SJ{
+    position: absolute;
+    top: 21px;
+    left: 100px;
+    width: 0;
+    height: 0;
+    border-width: 6px;
+    border-color: #c4f7ff #3a9d9a #3a9d9a  #3a9d9a;
+    border-style: solid;
+}
+.hander ul li:nth-child(2) .SJ{
+    left: 110px;
+}
+.hander .reach{
+    position: absolute;
+    /* float: left; */
+    margin-left: 44px;
+    border: 1px solid #317798;
+    top: 12px;
+    left: 200px;
+    /* right: 450px; */
+    border-radius: 5px;
+    overflow: hidden;
+    width: 200px;
+    height: 25px;
+
+}
+.hander input{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 190px;
+    height: 100%;
+    background-color: #e1ebea;
+    padding-left: 10px;
+}
+.hander img{
+    position: absolute;
+    top: 2px;
+    right: 0;
+}
+
+ .destination{
+    position: absolute;
+    width: 309px;
+    height: 244px;
+    border: 1px solid #c0c0c0;
+    padding-top: 28px;
+    padding-left: 30px;
+    top: 49px;
+     left: -1px;
+     display: none;
+     z-index: 10;
+ }
+.destination-S {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+
+.destination-S #u1{
+    width: 290px;
+    height: 81px;
+}
+#u1{
+    line-height: normal;
+    font-weight: 400;
+    border-bottom: 1px solid #c0c0c0 ;
+}
+#u1 .HW{
+    text-align: left;
+    height: 15px;
+    width: 100%;
+}
+#u1 .HW a{
+    color: #0e7cbf;
+}
+#u1 .mu{
+
+    margin-top: 14px;
+    font-size: 12px;
+}
+#u1 .mu div{
+    line-height: 20px;
+    float: left;
+}
+#u1 .mu a{
+    color: #949494;
+}
+#u1 .mu span{
+    padding: 0 8px;
+}
+
+.destination-S ul:nth-child(2){
+    width: 290px;
+    height: 59px;
+    /*background-color: red;*/
+}
+#u2{
+    text-align: left;
+    line-height: normal;
+    font-weight: 400;
+    border-bottom: 1px solid #c0c0c0 ;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+#u2 .HW{
+    height: 15px;
+    width: 100%;
+}
+#u2 .HW a{
+    color: #0e7cbf;
+}
+#u2 .mu{
+    margin-top: 14px;
+    font-size: 12px;
+}
+#u2 .mu div{
+    float: left;
+}
+#u2 .mu a{
+    color: #949494;
+}
+#u2 .mu span {
+    padding: 0 8px;
+}
+
+
+.destination-S ul:nth-child(3){
+    width: 290px;
+    height: 73px;
+    /*background-color: red;*/
+}
+#u3{
+    text-align: left;
+    line-height: normal;
+    font-weight: 400;
+}
+#u3.HW{
+    height: 15px;
+    width: 100%;
+
+}
+#u3 .HW a{
+    color: #0e7cbf;
+}
+#u3 .mu{
+    margin-top: 14px;
+    font-size: 12px;
+}
+#u3 .mu div{
+    float: left;
+}
+#u3 .mu a{
+    color: #949494;
+}
+#u3 .mu span {
+    padding: 0 8px;
+}
+
+.activity{
+    position: absolute;
+    width: 277px;
+    height: 221px;
+    border: 1px solid #949494;
+    top: 49px;
+    left: -1px;
+    padding-top: 27px;
+    padding-left: 36px;
+    display: none;
+    z-index: 12;
+}
+.activityS{
+    width: 100%;
+    height: 100%;
+}
+.activityS ul:nth-child(1){
+    height: 34px;
+    width: 240px;
+    text-align: left;
+    border-bottom: 1px solid  #e0e0e0;
+}
+.activity .activitys ul:nth-child(1).mate {
+
+    font-weight: 400;
+}
+.activity .activityS .mate a{
+    color: #0e6596;
+    font-size: 15px;
+}
+.activityS ul:nth-child(2){
+    width: 240px;
+    height: 80px;
+    border-bottom: 1px solid  #e0e0e0;
+    text-align: left;
+    font-weight: 400;
+    line-height: 16px;
+    padding-top: 17px;
+
+}
+.activity .activityS .ride a{
+    color: #0e6596;
+    font-size: 15px;
+}
+.activity .activityS .ride{
+    margin-bottom: 14px;
+}
+.activityS .mate {
+    line-height: 15px;
+    font-weight: 400;
+}
+
+.activityS ul:nth-child(2) a{
+    margin-top: 14px;
+    font-size: 10px;
+    color: #949494;
+}
+.activityS ul:nth-child(2) span {
+    font-size: 10px;
+}
+.activityS ul:nth-child(2) p{
+    margin-top: 12px;
+}
+.activityS ul:nth-child(3){
+    height: 72px;
+    padding-top: 16px;
+    width: 240px;
+    text-align: left;
+    line-height: normal;
+}
+.brilliant{
+    text-align: left;
+    line-height: normal;
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+.activity .activityS .brilliant a{
+    color: #0e6596;
+}
+.activityS ul:nth-child(3) p{
+    font-size: 10px;
+    font-weight: 400;
+}
+.activityS ul:nth-child(3) p a{
+    color: #949494;
+}
+.community{
+    position: absolute;
+    top: 49px;
+    left: -1px;
+    width: 397px;
+    height: 477px;
+    border: 1px solid #949494;
+    padding-top: 27px;
+    padding-left: 41px;
+    display: none;
+    z-index: 13;
+}
+.communityS{
+    width: 366px;
+    height: 100%;
+}
+.communityS ul{
+    height: 214px;
+    width: 366px;
+    border-bottom: 1px solid #e0e0e0;
+}
+.communityS .forum{
+    font-size: 16px;
+    text-align: left;
+    line-height: normal;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+.communityS .forum a{
+    color: #0e65af;
+
+}
+.communityS .lists{
+    text-align: left;
+    line-height: normal;
+    font-size: 12px;
+    font-weight: 400;
+    margin-top: 24px;
+    height: 63px;
+}
+.communityS .lists div{
+    float: left;
+    color: #ced9ea;
+    line-height: 24px;
+}
+.communityS .lists div a{
+    color: #949494;
+}
+.communityS .lists div:nth-child(2n){
+    height: 11px;
+    padding: 0 6px;
+}
+.communityS .home{
+    text-align: left;
+    line-height: normal;
+    font-size: 12px;
+    font-weight: 400;
+    height: 60px;
+    margin-top: 23px;
+    line-height: 23px;
+}
+.home div{
+    float: left;
+    color: #ced9ea;
+}
+.home div:nth-child(2){
+    height: 11px;
+    padding: 0 6px;
+}
+.communityS .home div a{
+    color: #949494;
+}
+.communityS ul:nth-child(2){
+    height: 70px;
+    width: 366px;
+    padding-top: 16px;
+}
+.communityS ul:nth-child(2) .city{
+    text-align: left;
+    line-height: normal;
+    font-size: 14px;
+    font-weight: 400;
+}
+.community .communityS ul:nth-child(2) .city a{
+    color: #0e6596;
+}
+ .morecity div{
+    float: left;
+     font-weight: 400;
+     font-size: 10px;
+     line-height: normal;
+     text-align: left;
+     line-height: 25px;
+     color: #949494;
+}
+.community .communityS .morecity div a{
+    color: #949494;
+}
+.community .communityS ul:nth-child(3){
+    width: 366px;
+    height: 50px;
+    border-bottom: 1px solid #e0e0e0;
+    margin-bottom: 17px;
+}
+.community .communityS ul:nth-child(3) .ring{
+    text-align: left;
+    line-height: 50px;
+    font-size: 16px;
+    font-weight: 400;
+}
+.community .communityS ul:nth-child(3) .ring a{
+    color:  #0e6596;
+
+}
+.community .communityS ul:nth-child(4){
+    width: 336px;
+    height: 105px;
+}
+.community .communityS ul:nth-child(4) .topic {
+    text-align: left;
+    line-height: normal;
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+.community .communityS ul:nth-child(4) .topic a{
+    color:  #0e6596;
+}
+.community .communityS ul:nth-child(4) .find{
+    line-height: normal;
+    text-align: left;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 24px;
+}
+.community .communityS ul:nth-child(4) .find div{
+    float: left;
+    color: #949494;
+}
+.community .communityS ul:nth-child(4) .find div a{
+    color: #949494;
+}
+.serve{
+    display: none;
+    position: absolute;
+    width: 225px;
+    height: 150px;
+    border: 1px solid #c0c0c0;
+    top: 49px;
+    left:-1px;
+    padding-top: 27px;
+    padding-left: 35px;
+    z-index: 15;
+}
+.serveS{
+    width: 190px;
+    height: 100%;
+}
+.serveS .book{
+    text-align: left;
+    line-height: normal;
+    font-size: 15px;
+    font-weight: 400;
+}
+.serveS .book a{
+    color: #0e6596;
+}
+.serveS .insure{
+    text-align: left;
+    line-height: normal;
+    font-weight: 400;
+    line-height: 25px;
+    margin-top: 10px;
+}
+ .serve .serveS ul:nth-child(1){
+    height: 60px;
+    width: 188px;
+     border-bottom: 1px solid #c0c0c0;
+     margin-bottom: 15px;
+}
+.serveS ul:nth-child(1) .insure div{
+    float: left;
+    color: #949494;
+    font-size: 10px;
+}
+.serveS ul:nth-child(1) .insure div a{
+    color: #949494;
+}
+.serveS ul:nth-child(1) .insure div:nth-child(2){
+    padding: 0 9px;
+}
+.serveS ul:nth-child(2){
+    height: 63px;
+    width: 188px;
+    border-bottom: 1px solid  #c0c0c0;
+}
+.groceries{
+    line-height: normal;
+    text-align: left;
+    font-weight: 400;
+    font-size: 15px;
+
+}
+.serveS ul:nth-child(2) .groceries a{
+    color: #0e6596;
+}
+.serveS ul:nth-child(2).old{
+    line-height: normal;
+    text-align: left;
+}
+.serveS ul:nth-child(2) .old div{
+    color: #949494;
+    float: left;
+    margin-right: 9px;
+    font-size: 10px;
+    font-weight: 400;
+}
+.serveS ul:nth-child(2) .old div a{
+    color: #949494;
+}
+/*导航栏结束*/

@@ -1,0 +1,405 @@
+.container {
+    width     : 100%;
+    margin    : 0 auto;
+    min-height: 550px;
+}
+
+.guide_content {
+    font-family: "microsoft yahei", "simsun";
+}
+
+.bannerWrap {
+    width           : 100%;
+    margin          : 0 auto;
+    overflow        : hidden;
+    background-color: #f0f0f0;
+    padding         : 20px 0;
+}
+
+.banner {
+    width   : 996px;
+    margin  : 0 auto;
+    overflow: hidden;
+}
+
+.guide_header {
+    height: 270px;
+}
+
+.guide_menu {
+    float: left;
+}
+
+.guide_menu {
+    background-color: #ffffff;
+    width           : 204px;
+    height          : 270px;
+    overflow        : hidden;
+}
+
+.guide_menu h2 {
+    font-size  : 20px;
+    margin     : 14px 0 6px 10px;
+    color      : #2b2b2b;
+    font-weight: normal;
+}
+
+.guide_menu ul li {
+    float      : left;
+    width      : 84px;
+    border     : 1px solid #eeeeee;
+    text-align : center;
+    line-height: 100px;
+    margin     : 11px 0 0 11px;
+}
+
+.guide_menu ul li:hover {
+    background  : #eeeeee;
+    border-color: #cccccc;
+}
+
+.guide_menu ul li p {
+    font-size  : 16px;
+    line-height: 36px;
+}
+
+.foot {
+    background: url("../img/guide_foot1.png") no-repeat center;
+    height    : 60px;
+}
+
+.dive {
+    background: url("../img/guide_dive1.png") no-repeat center;
+    height    : 60px;
+}
+
+.rider {
+    background: url("../img/guide_ride1.png") no-repeat center;
+    height    : 60px;
+}
+
+.safe {
+    background: url("../img/guide_safe1.png") no-repeat center;
+    height    : 60px;
+}
+
+.diveColor {
+    color: #187be0;
+}
+
+.footColor {
+    color: #ee490b;
+}
+
+.rideColor {
+    color: #36b601;
+}
+
+.safeColor {
+    color: #f78900;
+}
+
+.feedColor {
+    color: #737373;
+}
+
+.guide_slider {
+    float   : right;
+    position: relative;
+}
+
+.guide_slider .guide_view {
+    height  : 270px;
+    width   : 780px;
+    position: relative;
+}
+
+.guide_slider .guide_view li {
+    position: absolute;
+    top     : 0;
+    left    : 0;
+    z-index : 1;
+}
+
+.guide_slider .guide_view .image a {
+    width : 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.guide_slider .guide_view .image img {
+    height: 270px;
+    width : 780px;
+}
+
+.guide_control {
+    width     : 301px;
+    position  : absolute;
+    bottom    : 15px;
+    right     : 30px;
+    text-align: center;
+    z-index   : 10;
+}
+
+.guide_control li {
+    float: left;
+}
+
+.guide_control li a {
+    width           : 20px;
+    height          : 20px;
+    border-radius   : 50%;
+    background-color: #ffffff;
+    display         : inline-block;
+    background      : url("../img/index_icon.png") no-repeat 0 0;
+}
+
+.guide_control li a:hover {
+    background: url('../img/index_icon.png') no-repeat 0 -20px;
+}
+
+.guide_control li.current a {
+    background: url('../img/index_icon.png') no-repeat 0 -20px;
+}
+
+/*热门专题开始*/
+.theme_con {
+    width           : 100%;
+    margin          : 0 auto;
+    overflow        : hidden;
+    background-color: #ffffff;
+}
+
+
+.theme_con .guide_list {
+    width   : 996px;
+    margin  : 0 auto;
+    overflow: hidden;
+}
+
+.theme_con .guide_list:last-child {
+    margin-bottom: 90px;
+}
+
+.mt20 {
+    margin-top: 20px !important;
+}
+
+.guide_list h2 {
+    height     : 32px;
+    font-weight: normal;
+}
+
+.guide_list .list_title {
+    font-size  : 20px;
+    line-height: 32px;
+    padding    : 0 60px 0 12px;
+}
+
+.guide_list .more,
+.guide_list .ul_close {
+    font-size      : 14px;
+    color          : #666666;
+    text-decoration: none;
+    padding        : 14px 10px 0 0;
+    float          : right;
+    cursor         : pointer;
+}
+
+.guide_list .close_ul {
+    width: 996px;
+    float: left;
+}
+
+.guide_list .ul_close {
+    padding-top: 0;
+}
+
+.divebar {
+    border-left: solid 5px #187be0;
+}
+
+.footbar {
+    border-left: solid 5px #ee490b;
+}
+
+.ridebar {
+    border-left: solid 5px #36b601;
+}
+
+.safebar {
+    border-left: solid 5px #f78900;
+}
+
+.feedbar {
+    border-left: solid 5px #737373;
+}
+
+.guide_detail {
+    float       : left;
+    width       : 196px;
+    height      : 315px;
+    margin-right: 70px;
+    margin-top  : 18px;
+    position    : relative;
+}
+
+.guide_detail .guide_download {
+    padding: 4px;
+    height : 266px;
+    width  : 188px;
+}
+
+.guide_detail .guide_download img {
+    height: 266px;
+    width : 188px;
+}
+
+
+.guide_detail .guide_download .guide_detail_cover {
+    position          : absolute;
+    top               : 0;
+    left              : 0;
+    width             : 196px;
+    height            : 277px;
+    opacity           : 0;
+    z-index           : 3;
+    background-color  : #F3F3F3;
+    border-radius     : 4px;
+    box-shadow        : 0 1px 3px rgba(34, 25, 25, 0.2);
+    -webkit-transition: all 450ms ease 295ms;
+    -moz-transition   : all 450ms ease 295ms;
+    -ms-transition    : all 450ms ease 295ms;
+    transition        : all 450ms ease 295ms;
+    display           : none;
+}
+
+.guide_detail .guide_download .guide_detail_cover_wrap {}
+
+.guide_detail .guide_download .guide_detail_cover_name {
+    text-align        : center;
+    font-size         : 18px;
+    font-weight       : bold;
+    color             : #333;
+    margin            : 50px 10px 20px 10px;
+    display           : block;
+    visibility        : hidden;
+    opacity           : 0;
+    height            : 36px;
+    overflow          : hidden;
+    text-decoration   : none;
+    -webkit-transform : translateY(175px);
+    -moz-transform    : translateY(175px);
+    -ms-transform     : translateY(175px);
+    transform         : translateY(175px);
+    -webkit-transition: all 325ms ease 225ms;
+    -moz-transition   : all 325ms ease 225ms;
+    -ms-transition    : all 325ms ease 225ms;
+    transition        : all 325ms ease 225ms;
+}
+
+.guide_detail .guide_download .guide_detail_cover_icon {
+    background        : url(../img/guide_view.png) no-repeat;
+    width             : 56px;
+    opacity           : 0;
+    visibility        : hidden;
+    display           : block;
+    height            : 60px;
+    text-align        : center;
+    margin            : 0 auto;
+    -webkit-transform : translateY(94px);
+    -moz-transform    : translateY(94px);
+    -ms-transform     : translateY(94px);
+    transform         : translateY(94px);
+    -webkit-transition: all 200ms ease 100ms;
+    -moz-transition   : all 200ms ease 100ms;
+    -ms-transition    : all 200ms ease 100ms;
+    transition        : all 200ms ease 100ms;
+}
+
+.guide_detail .guide_download .guide_detail_cover_btn {
+    text-align        : center;
+    margin            : 30px 10px;
+    display           : block;
+    visibility        : hidden;
+    font-size         : 16px;
+    opacity           : 0;
+    overflow          : hidden;
+    text-decoration   : none;
+    -webkit-transform : translateY(60px);
+    -moz-transform    : translateY(60px);
+    -ms-transform     : translateY(60px);
+    transform         : translateY(60px);
+    -webkit-transition: all 325ms ease 225ms;
+    -moz-transition   : all 325ms ease 225ms;
+    -ms-transition    : all 325ms ease 225ms;
+    transition        : all 325ms ease 225ms;
+}
+
+.guide_detail .guide_download:hover .guide_detail_cover {
+    opacity           : 0.8;
+    display           : block;
+    -webkit-transition: all 300ms ease-out;
+    -moz-transition   : all 300ms ease-out;
+    -ms-transition    : all 300ms ease-out;
+    transition        : all 300ms ease-out
+}
+
+.guide_detail .guide_download:hover .guide_detail_cover_name {
+    opacity           : 1;
+    visibility        : visible;
+    -webkit-transform : translateY(0px);
+    -moz-transform    : translateY(0px);
+    -ms-transform     : translateY(0px);
+    transform         : translateY(0px);
+    -webkit-transition: all 350ms ease 300ms;
+    -moz-transition   : all 350ms ease 300ms;
+    -ms-transition    : all 350ms ease 300ms;
+    transition        : all 350ms ease 300ms;
+}
+
+.guide_detail .guide_download:hover .guide_detail_cover_icon {
+    visibility        : visible;
+    opacity           : 1;
+    -webkit-transform : translateY(0px);
+    -moz-transform    : translateY(0px);
+    -ms-transform     : translateY(0px);
+    transform         : translateY(0px);
+    -webkit-transition: all 425ms ease 325ms;
+    -moz-transition   : all 425ms ease 325ms;
+    -ms-transition    : all 425ms ease 325ms;
+    transition        : all 425ms ease 325ms;
+}
+
+.guide_detail .guide_download:hover .guide_detail_cover_btn {
+    visibility        : visible;
+    opacity           : 1;
+    -webkit-transform : translateY(0px);
+    -moz-transform    : translateY(0px);
+    -ms-transform     : translateY(0px);
+    transform         : translateY(0px);
+    -webkit-transition: all 500ms ease 400ms;
+    -moz-transition   : all 500ms ease 400ms;
+    -ms-transition    : all 500ms ease 400ms;
+    transition        : all 500ms ease 400ms;
+}
+
+.guide_detail .guide_detail_name {
+    color          : #333333;
+    text-decoration: none;
+    display        : block;
+    background     : url(../img/guide_download.png) no-repeat;
+    font-size      : 14px;
+    font-weight    : bold;
+    overflow       : hidden;
+    padding-left   : 20px;
+    margin         : 10px 0;
+    white-space    : nowrap;
+    text-overflow  : ellipsis;
+}
+
+.theme_con ul .guide_detail.last {
+    margin-right: 0 !important;
+}
+
+/*热门专题结束*/

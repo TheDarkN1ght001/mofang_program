@@ -1,0 +1,64 @@
+/* 初始化代码开始 */
+html,
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li,
+ol,
+input,
+a,
+img,
+dl,
+dd {
+    margin : 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+
+}
+
+/* a:hover {
+    color:#e33333;
+} */
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+input,
+img {
+    border        : none;
+    outline       : none;
+    vertical-align: middle;
+}
+
+body {
+    font-size       : 12px;
+    background-color: white;
+    font-weight     : 400;
+    font-family     : "微软雅黑", Consolas, "Courier New", monospace;
+}
+
+/* 那里要设置文字颜色为红,就在那里添加这个类. */
+.fontColorRed {
+    color: red;
+}
+
+/* 清除浮动带来的影响的代码 */
+.clearfix::after {
+    content   : ".";
+    height    : 0;
+    display   : block;
+    clear     : both;
+    visibility: hidden;
+}
+
+.clearfix {
+    *zoom: 1;
+}

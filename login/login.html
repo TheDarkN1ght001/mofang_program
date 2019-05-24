@@ -1,0 +1,261 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head profile="http://gmpg.org/xfn/11">
+    <title>用户登录 - 磨房</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="磨房" />
+    <meta name="description" content="发现心世界，协助每一颗自由的心实现远行的梦想">
+    <meta name="sogou_site_verification" content="LXc8vG0Bcm" />
+    <link rel="icon" type="image/ico" href="../img/favicon.ico/favicon.ico" />
+    <link rel="bookmark icon" type="image/ico" href="../img/favicon.ico/favicon.ico" />
+    <link rel="shortcut icon" type="image/ico" href="../img/favicon.ico/favicon.ico" />
+
+    <link rel="stylesheet" type="text/css" href="../css/dy_new_little_top_v2.css" />
+    <link rel="stylesheet" type="text/css" href="../css/user.css" />
+
+
+    <script type="text/javascript" src="../js/jquery-1.12.2.min.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="../js/jquery.cookie.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="../js/Ac_jquery.form.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="../js/jquery.md5.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="../js/dy.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="../js/jquery.validate.min.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="../js/login.js"></script>
+    <style type="text/css">
+        .container {
+            margin-top: 0px;
+            margin-bottom: 0px;
+            position: absolute;
+            top: 0;
+            left: 0px;
+            width: 100%;
+        }
+
+        /*
+    *底部
+    */
+        body {
+            min-width: 996px;
+        }
+
+        #footer {
+            padding: 20px 0 20px;
+            background: #fff;
+            border-top: 1px solid #e5e5e5;
+            position: fixed;
+            width: 100%;
+            width: 100% !important;
+            bottom: 0px;
+            background: rgba(255, 255, 255, 0.7);
+            -ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=1,startColorstr=#80ffffff,endColorstr=#80ffffff)";
+            /*Filter for IE8 */
+            filter: progid:DXImageTransform.Microsoft.gradient(GradientType=1, startColorstr=#80ffffff, endColorstr=#80ffffff);
+            /*Filter for older IEs */
+        }
+
+        .footerContent {
+            width: 996px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+        .footerContent p {
+            float: left;
+            color: #757575;
+        }
+
+        #footer p.copyP a {
+            display: none;
+        }
+
+        #footer .footerContent ul {
+            float: right;
+            display: block;
+        }
+
+        #footer .footerContent ul li a {
+            color: #49758b;
+        }
+
+        #footer .helpCenter {
+            display: none;
+        }
+
+        @media screen and (min-height: 830px) {
+            body {
+                height: 100%;
+                overflow-y: hidden;
+            }
+        }
+    </style>
+
+
+    <img alt="" class="CoverImg" src="../img/register/login_cover_all1.jpg" />
+
+    <div class="container">
+        <audio src="./bgm.mp3" autoplay></audio>
+        <div class="register login">
+
+            <div class="loginBox">
+                <div class="title">
+                    <h2>登录到磨房</h2>
+                    <div class="tipsBack"></div>
+                </div>
+                <form action="/user/login" method="post" id="loginForm">
+                    <dl class="clearfix">
+                        <dd><input class="text" type="text" name="username" value="" placeholder="用户名/邮箱地址/手机号码"
+                                autocomplete="off" /></dd>
+                        <dd class="tips">
+                            <span class="left"></span>
+                            <span class="center"></span>
+                            <span class="right"></span>
+                        </dd>
+                    </dl>
+                    <dl class="clearfix">
+                        <dd><input class="text" type="password" name="password" value="" placeholder="密码"
+                                autocomplete="off" /></dd>
+                        <dd class="tips">
+                            <span class="left"></span>
+                            <span class="center"></span>
+                            <span class="right"></span>
+                        </dd>
+                    </dl>
+                    <div class="errorTips"></div>
+                    <dl class="clearfix">
+                        <dd><label><input type="checkbox" name="cookie" id="rememberUsername" value="1"
+                                    style="margin-right:5px;" />下次自动登录<span style="padding-left: 30px;"><a
+                                        href="/user/account/lost_password" class="Link">忘记密码？</a></span></label></dd>
+                    </dl>
+                    <p class="sub_p">
+                        <input type="hidden" name="url" value="/user/register" />
+                        <input type="submit" value="立即登录" class="button-main" style="height:42px;" />
+                        <span>还没有磨房帐号？<a href="../register.html" class="Link">立即注册</a></span>
+                    </p>
+                </form>
+            </div>
+            <div class="logobox">
+                <a href="../index.html"><img alt="磨房-发现心世界" src="../img/register/logo.png" /></a>
+            </div>
+            <!--<div class="app-in"></div>-->
+        </div>
+
+        <script type="text/javascript">
+            //显示提示信息
+            function clearTips(obj, str, msgs) {
+                $(obj).removeClass('fail').removeClass('ok').removeClass('loading');
+                if (str) $(obj).addClass(str);
+                $(obj).find('.center').html(msgs);
+                return $(obj);
+            }
+
+            $(function () {
+
+                //更换验证码
+                $(".verifyCode").click(function () {
+                    $(this).find("a").css("backgroundImage", "url(../captcha?time_stamp=" + (new Date().getTime()) + ")");
+                });
+
+                //表单验证
+                var submitBtn = $(".button-green");
+                $("#loginForm").validate({
+                    rules: {
+
+                        username: {
+                            required: true
+                        },
+                        password: {
+                            required: true
+                        },
+                        captcha: {
+                            required: true,
+                            remote: {
+                                url: "../api/user/checkCaptcha", //后台处理程序
+                                type: "post",  //数据发送方式
+                                dataType: "json",       //接受数据格式
+                                data: { captcha: function () { return $("#captcha").val(); } } //要传递的数据
+
+                            }
+                        }
+                    },
+                    messages: {
+                        username: {
+                            required: "用户名不能为空!"
+                        },
+                        password: {
+                            required: "密码不能为空!"
+                        },
+                        captcha: {
+                            required: "验证码不能为空!",
+                            remote: "请输入正确的验证码"
+                        }
+                    }, errorPlacement: function (error, element) {
+
+
+
+                        if (error.text()) {
+                            //clearTips($(element).parent().nextAll('.tips'),'fail',error.text());
+                            if (!$('.errorTips').html()) $('.errorTips').html(error.text());
+                            //submitBtn.addClass("disable");
+                            //submitBtn.find("input").attr("disabled",true)
+                        }
+                        else {
+                            if (element.get(0).id == 'captcha') {
+                                //clearTips($(element).parent().nextAll('.tips'),'ok','');
+                                $('.errorTips').html('');
+                            }
+                            else {
+                                //clearTips($(element).parent().nextAll('.tips'),'','');
+                                $('.errorTips').html('');
+                            }
+
+                            //submitBtn.removeClass("disable");
+                            //submitBtn.find("input").attr("disabled",false);
+                        }
+
+                    },
+
+                    success: function (label) {
+
+                    }
+                });
+
+                //聚焦
+                $('input[name="username"]').focus();
+                jQuery('#loginForm input[placeholder]').placeholder();
+            });
+        </script>
+
+
+
+        <div class="clear"></div>
+    </div>
+
+    <!--底部-->
+    <div id="footer">
+        <div class="footerContent">
+            <p class="copyP">
+                &copy; 2000 - 2019 www.doyouhike.net Version 4.7.8 - 2019-03-25 10:14:00 +0800 粤ICP备11038623号-2 &nbsp;
+            </p>
+            <ul>
+                <li><a href="/doc/about.html">关于我们</a>|</li>
+                <li><a href="/doc/copyright.html">版权声明</a>|</li>
+                <li><a href="/doc/copyright.html">隐私保护</a>|</li>
+                <li><a href="/doc/contact.html">联系我们</a></li>
+            </ul>
+
+        </div>
+    </div>
+    <!-- 底部app下载提示-->
+    <div id="appBottomIn" class="app-bottom-in">
+        <div class="app-shadow"></div>
+        <div class="app-bottom-ct"></div>
+        <div class="app_close"></div>
+    </div>
+    <div class="snow-container"
+        style="position:fixed;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:100001;"></div>
+    <script type="text/javascript" src="../js/all.js"></script>
+    </body>
+
+</html>

@@ -1,0 +1,230 @@
+body {
+  background-color: #f2f2f2;
+}
+#box {
+  width: 994px;
+  height: 161px;
+  margin: 0 auto;
+  background: #fefefeff;
+  border: 1px solid #e5e5e5;
+  margin-top: 20px;
+}
+h1.mte-title {
+  font-size: 30px;
+  font-weight: normal;
+  color: #4db6b3;
+  line-height: 40px;
+  margin-left: 30px;
+  margin-top: 40px;
+}
+.title-info {
+  color: #aaa;
+  font-size: 18px;
+  float: left;
+  margin-left: 30px;
+  margin-top: 22px;
+}
+.author-info {
+  margin-left: 824px;
+  margin-top: -34px;
+  position: relative;
+}
+.author-pic {
+  position: absolute;
+  top: -12px;
+}
+.met-ct {
+  width: 994px;
+  height: 100%;
+  margin: 0 auto;
+  background-color: #fff;
+  border: 1px solid #e5e5e5;
+  margin-top: 30px;
+}
+.mte-title {
+  margin-left: 30px;
+  font-size: 16px;
+  font-weight: normal;
+  margin-top: 32px;
+}
+.met-box {
+  border-top: 1px solid #e5e5e5;
+  width: 956px;
+  margin-left: 20px;
+  margin-bottom: 25px;
+  margin-top: 32px;
+}
+.met-box a {
+  text-decoration: none;
+}
+.title {
+  font-size: 18px;
+  color: #404040;
+  font-weight: normal;
+  margin-left: 14px;
+  margin-top: 45px;
+}
+.inof {
+  color: #aaa;
+  font-size: 14px;
+  margin-left: 14px;
+  float: left;
+  margin-top: 50px;
+}
+.icon-like,
+.icon-cmt,
+.icon-see {
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+  background: url(../img/eec77da4dffb33a0c110cea38f834336_icon.png) 0 0 no-repeat;
+  float: right;
+  margin-top: 30px;
+}
+.icon-like {
+  padding-left: 32px;
+  background-position: -7px -30px;
+}
+.icon-cmt {
+  padding-left: 32px;
+  background-position: -7px -60px;
+}
+.icon-see {
+  padding-left: 32px;
+  background-position: -7px -90px;
+  padding-right: 10px;
+}
+.met-box img {
+  width: 100%;
+  height: 450px;
+  margin-top: 30px;
+}
+element.style {
+  position: fixed;
+  right: 41px;
+  top: 218px;
+}
+a.mte-more-btn {
+  display: inline-block;
+  height: 58px;
+  line-height: 58px;
+  text-align: center;
+  color: #aaa;
+  font-size: 18px;
+  width: 954px;
+  background-color: #f2f2f2;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  text-decoration: none;
+}
+a#go-top {
+  position: fixed;
+  right: 60px;
+  top: 485px;
+  display: none;
+}
+a#feedback {
+  position: fixed;
+  display: block;
+  right: 60px;
+  top: 545px;
+}
+a#go-top,
+a#feedback {
+  background: #37a19e url(../img/4904d5cd56eb98def8bd5e3e29b9a93c_gotop.gif) no-repeat -52px 0;
+  width: 52px;
+  height: 52px;
+  text-align: center;
+  line-height: 1000px;
+  text-decoration: none;
+  overflow: hidden;
+  color: #999;
+  font-size: 0.1px;
+}
+a#feedback {
+  background-position: -52px -53px;
+}
+a#go-top:hover {
+  background-position: 0 0;
+}
+a#feedback:hover {
+  background-position: 0 -53px;
+}
+footer {
+  margin-top: 30px;
+  min-width: 996px;
+  background: #2b2b2b;
+  padding: 50px 0 40px;
+  width: auto!important;
+  color: #888;
+  text-align: center;
+}
+footer .help {
+  width: 996px;
+  margin: 0 auto 50px;
+  text-align: left;
+}
+footer .help dl {
+  float: left;
+  width: 145px;
+  height: 140px;
+  padding-left: 15px;
+  border-left: 1px solid #404040;
+}
+footer .help dl.first {
+  margin-left: 45px;
+}
+footer .help dt {
+  font-size: 14px;
+  padding-bottom: 10px;
+  color: #9c9c9c;
+  line-height: 24px;
+  font-weight: bold;
+}
+footer .help dd {
+  line-height: 24px;
+}
+footer .help dd a {
+  color: #818181;
+}
+.last {
+  margin-right: 0!important;
+}
+.sina {
+  padding-left: 25px;
+}
+footer .help dd.mfweixin,
+footer .help dd.mflvxing {
+  padding-left: 25px;
+  position: relative;
+}
+footer .help dd.mfweixin .weixinqr {
+  border: 3px solid #fff;
+  position: absolute;
+  left: 25px;
+  top: 22px;
+  display: none;
+  z-index: 500;
+}
+footer .help dd.mfweixin:hover a.weixinqr {
+  display: block;
+}
+.help dd.mfweixin a:hover .weixinqr {
+  display: block;
+}
+footer p {
+  line-height: 24px;
+  padding-bottom: 5px;
+  font-size: 14px;
+}
+footer .bottom_lvxing_img {
+  width: 86px;
+  height: 86px;
+  display: block;
+}
+.clear {
+  clear: both;
+  height: 0px;
+  line-height: 0px;
+  font-size: 0px;
+}

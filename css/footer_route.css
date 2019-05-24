@@ -1,0 +1,162 @@
+
+
+/* 底部展示栏开始 */
+.bottom {
+    width: 100%;
+    height: 231px;
+    background-color: #2b2b2b;
+    margin-top: 60px;
+}
+
+
+.bottom .my-bottomNav {
+    width: 996px;
+    height: 231px;
+    margin: 0 auto;
+}
+
+
+.bottom .my-bottomNav ul:first-child {
+    margin-left: 45px;
+}
+
+
+.bottom .my-bottomNav ul {
+    float: left;
+    width: 145px;
+    height: 140px;
+    box-sizing: border-box;
+    border-left: 1px solid #404040;
+    margin-top: 50px;
+    padding-left: 15px;
+}
+
+
+.bottom .my-bottomNav #img a:hover,
+#imgT a:hover {
+    text-decoration: none
+}
+
+
+.bottom .my-bottomNav #img span {
+    display: none;
+    width: 80px;
+    height: 80px;
+    background-color: #fff;
+    margin-left: 26px;
+    box-sizing: border-box;
+    padding: 3px;
+}
+
+
+.bottom .my-bottomNav #imgT {
+    position: relative;
+}
+
+
+.bottom .my-bottomNav #imgT span {
+    display: none;
+    width: 80px;
+    height: 80px;
+    background-color: #fff;
+    margin-left: 25px;
+    position: absolute;
+    padding: 3px;
+}
+
+
+.bottom .my-bottomNav #img span img {
+    width: 74px;
+    height: 74px;
+}
+
+
+.bottom .my-bottomNav ul li:first-child strong {
+    color: #9c9c9c;
+    font-size: 14px;
+}
+
+
+.bottom .my-bottomNav ul li a {
+    display: block;
+    color: #818181;
+    font-size: 14px;
+    height: 24px;
+}
+
+
+.bottom .my-bottomNav ul li a:hover {
+    text-decoration: underline;
+}
+
+
+.bottom .my-bottomNav ul li:first-child {
+    margin-bottom: 13px;
+    margin-top: 2px;
+}
+
+
+.bottom .my-bottomNav ul:last-child {
+    border-left: 0;
+    padding-left: 0px;
+}
+
+
+.bottom .my-bottomNav ul:last-child>li {
+    margin-top: 0px;
+}
+
+
+.bottom .my-bottomNav ul .md {
+    vertical-align: middle;
+    margin-top: -2px;
+    margin-right: 1px;
+}
+
+
+/* 底部展示栏结束 */
+
+
+
+/* 右侧联系栏开始 */
+#top {
+    display: none;
+    width: 52px;
+    height: 54px;
+    background: url(../img/HDgotop.gif)no-repeat -52px 1px;
+    position: fixed;
+    bottom: 102px;
+    right: 19.5%;
+    cursor: pointer;
+}
+
+
+#top:hover {
+    background: url(../img/HDgotop.gif)no-repeat 0px 1px;
+}
+
+
+.contact {
+    width: 52px;
+    height: 54px;
+    background: url(../img/HDgotop.gif)no-repeat -52px -52px;
+    position: fixed;
+    bottom: 42px;
+    right: 19.5%;
+    cursor: pointer;
+}
+
+
+.contact:hover {
+    background: url(../img/HDgotop.gif)no-repeat 0px -52px;
+}
+
+
+#xin a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* 右侧联系栏结束 */
